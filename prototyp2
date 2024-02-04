@@ -1,0 +1,156 @@
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: MyHomePage(),
+    );
+  }
+}
+
+class MyHomePage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Horizontal and Vertical Scrolling Example'),
+      ),
+      body: ListView(
+        scrollDirection: Axis.vertical,
+        children: <Widget>[ 
+          Column(
+          children: <Widget>[
+            Container(
+              height: 200.0,
+              child: ListView(
+                scrollDirection: Axis.horizontal,
+                children: <Widget>
+                [Row(
+                  children: <Widget>[
+                    Container(
+                      child: Center(child: Text("1", textAlign: TextAlign.center, style: TextStyle(fontSize: 24),)),
+                      height: 200.0,
+                      width: 200.0,
+                      color: Color.fromARGB(255, 20, 94, 0),
+                    ),
+                    Container(
+                      child: Center(child: Text("2", textAlign: TextAlign.center, style: TextStyle(fontSize: 24),)),
+                      height: 200.0,
+                      width: 200.0,
+                      color: Color.fromARGB(255, 8, 157, 0),
+                    ),
+                    Container(
+                      child: Center(child: Text("3", textAlign: TextAlign.center, style: TextStyle(fontSize: 24),)),
+                      height: 200.0,
+                      width: 200.0,
+                      color: const Color.fromARGB(255, 0, 197, 7),
+                    ),
+                    Container(
+                      child: Center(child: Text("4", textAlign: TextAlign.center, style: TextStyle(fontSize: 24),)),
+                      height: 200.0,
+                      width: 200.0,
+                      color: const Color.fromARGB(255, 0, 255, 9),
+                    ),
+                    Container(
+                      child: Center(child: Text("5", textAlign: TextAlign.center, style: TextStyle(fontSize: 24),)),
+                      height: 200.0,
+                      width: 200.0,
+                      color: const Color.fromARGB(255, 49, 255, 56),
+                    ),
+                    Container(
+                      child: Center(child: Text("6", textAlign: TextAlign.center, style: TextStyle(fontSize: 24),)),
+                      height: 200.0,
+                      width: 200.0,
+                      color: const Color.fromARGB(255, 73, 255, 79),
+                    ),
+                    Container(
+                      child: Center(child: Text("7", textAlign: TextAlign.center, style: TextStyle(fontSize: 24),)),
+                      height: 200.0,
+                      width: 200.0,
+                      color: const Color.fromARGB(255, 81, 255, 87),
+                    ),
+                    Container(
+                      child: Center(child: Text("8", textAlign: TextAlign.center, style: TextStyle(fontSize: 24),)),
+                      height: 200.0,
+                      width: 200.0,
+                      color: const Color.fromARGB(255, 109, 255, 114),
+                    ),
+                    Container(
+                      child: Center(child: Text("9", textAlign: TextAlign.center, style: TextStyle(fontSize: 24),)),
+                      height: 200.0,
+                      width: 200.0,
+                      color: Color.fromARGB(255, 146, 255, 150),
+                    ),
+                    Container(
+                      child: Center(child: Text("10", textAlign: TextAlign.center, style: TextStyle(fontSize: 24),)),
+                      height: 200.0,
+                      width: 200.0,
+                      color: const Color.fromARGB(255, 230, 255, 230),
+                    ),
+                  ],
+                ),
+                ]
+              ),
+            ),
+            Container(
+              child: Center(child: Text("Один", textAlign: TextAlign.center, style: TextStyle(fontSize: 24),)),
+              height: 200.0,
+              color: Color.fromARGB(255, 126, 69, 0),
+            ),
+            Container(
+              child: Center(child: Text("Два", textAlign: TextAlign.center, style: TextStyle(fontSize: 24),)),
+              height: 200.0,
+              color: const Color.fromARGB(255, 168, 101, 0),
+            ),
+            Container(
+              child: Center(child: Text("Три", textAlign: TextAlign.center, style: TextStyle(fontSize: 24),)),
+              height: 200.0,
+              color: Color.fromARGB(255, 182, 109, 0),
+            ),
+            Container(
+              child: Center(child: Text("Четыри", textAlign: TextAlign.center, style: TextStyle(fontSize: 24),)),
+              height: 200.0,
+              color: Color.fromARGB(255, 193, 116, 0),
+            ),
+            Container(
+              child: Center(child: Text("Пять", textAlign: TextAlign.center, style: TextStyle(fontSize: 24),)),
+              height: 200.0,
+              color: Color.fromARGB(255, 209, 125, 0),
+            ),
+            Container(
+              child: Center(child: Text("Шесть", textAlign: TextAlign.center, style: TextStyle(fontSize: 24),)),
+              height: 200.0,
+              color: Color.fromARGB(255, 225, 135, 0),
+            ),
+            Container(
+              child: Center(child: Text("Семь", textAlign: TextAlign.center, style: TextStyle(fontSize: 24),)),
+              height: 200.0,
+              color: Color.fromARGB(255, 255, 153, 0),
+            ),
+            Container(
+              child: Center(child: Text("Восемь", textAlign: TextAlign.center, style: TextStyle(fontSize: 24),)),
+              height: 200.0,
+              color: Color.fromARGB(255, 255, 162, 22),
+            ),
+            Container(
+              child: Center(child: Text("Девять", textAlign: TextAlign.center, style: TextStyle(fontSize: 24),)),
+              height: 200.0,
+              color: Color.fromARGB(255, 255, 165, 29),
+            ),
+            Container(
+              child: Center(child: Text("Десять", textAlign: TextAlign.center, style: TextStyle(fontSize: 24),)),
+              height: 200.0,
+              color: Color.fromARGB(255, 255, 174, 54),
+            ),
+          ],
+        ),
+        ]
+      ),
+    );
+  }
+}
